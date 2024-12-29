@@ -26,8 +26,8 @@
 
 // I2C
 #define I2C_SUPPORTED
-#define I2C_SDA_NUM 14
-#define I2C_SCL_NUM 13
+#define I2C_SDA 14
+#define I2C_SCL 13
 
 // SSD1306
 #define I2C_SSD1306_DISPLAY
