@@ -11,14 +11,14 @@
 
 void setup(void)
 {
+#ifdef DEV_DEVICE_INIT
+  DEV_DEVICE_INIT();
+#endif
+
   Serial.begin(115200);
   // Serial.setDebugOutput(true);
   // while(!Serial);
   Serial.println("Arduino_GFX Hello World example");
-
-#ifdef DEV_DEVICE_INIT
-  DEV_DEVICE_INIT();
-#endif
 
   // Init Display
   if (!gfx->begin(GFX_SPEED))
