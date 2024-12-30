@@ -12,6 +12,8 @@
     digitalWrite(SD_CS, HIGH);      \
     pinMode(LORA_CS, OUTPUT);       \
     digitalWrite(LORA_CS, HIGH);    \
+    pinMode(GFX_CS, OUTPUT);        \
+    digitalWrite(GFX_CS, HIGH);     \
     pinMode(PERI_POWER, OUTPUT);    \
     digitalWrite(PERI_POWER, HIGH); \
     delay(500);                     \
@@ -44,7 +46,8 @@
 #define GFX_SUPPORTED
 #include <Arduino_GFX_Library.h>
 #define GFX_BL 42
-Arduino_DataBus *bus = new Arduino_HWSPI(11 /* DC */, 12 /* CS */, SPI_SCK, SPI_MOSI, SPI_MISO);
+#define GFX_CS 12
+Arduino_DataBus *bus = new Arduino_HWSPI(11 /* DC */, GFX_CS, SPI_SCK, SPI_MOSI, SPI_MISO);
 Arduino_ST7789 *gfx = new Arduino_ST7789(bus, GFX_NOT_DEFINED /* RST */, 1 /* rotation */, true /* IPS */);
 #define GFX_SPEED 80000000UL
 
