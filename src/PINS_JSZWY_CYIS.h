@@ -30,15 +30,9 @@
 #define CAMERA_HREF 12
 #define CAMERA_PCLK 33
 
-// I2C
-#define I2C_SUPPORTED
-#define I2C_SDA_NUM CAMERA_SIOD
-#define I2C_SCL_NUM CAMERA_SIOC
-#define I2C_FREQ 400000UL
-
 // MOTOR
 #define MOTOR
-#define MOTOR_R_A 19
-#define MOTOR_R_B 22
+#define MOTOR_R_A 9
+#define MOTOR_R_B 10
 #define MOTOR_L_A 18
 #define MOTOR_L_B 23
