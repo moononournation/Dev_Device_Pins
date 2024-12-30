@@ -36,5 +36,5 @@
 // Servo 360 Motor
 #define SERVO360MOTOR
 #define SERVO360_REVERSE
-#define SERVO360_L_PIN 4
-#define SERVO360_R_PIN 2
+#define SERVO360_L 4
+#define SERVO360_R 2

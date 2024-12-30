@@ -79,6 +79,10 @@
 // #define I2C_SCL 99
 // #define I2C_FREQ 400000UL
 
+// SSD1306
+// #define I2C_SSD1306_DISPLAY
+// #define I2C_SSD1306_ADDRESS 0x3c
+
 // Touchscreen
 // #define TOUCH_SUPPORTED
 // #define TOUCH_MODULES_GT911 // GT911 / CST_SELF / CST_MUTUAL / ZTW622 / L58 / FT3267 / FT5x06
@@ -100,3 +104,16 @@
 // #define I2S_LRCK 99
 // #define I2S_DOUT 99
 // #define I2S_DIN -1
+
+// Motor
+// #define MOTOR
+// #define MOTOR_R_A 99
+// #define MOTOR_R_B 99
+// #define MOTOR_L_A 99
+// #define MOTOR_L_B 99
+
+// Servo 360 Motor
+// #define SERVO360MOTOR
+// #define SERVO360_REVERSE
+// #define SERVO360_L 4
+// #define SERVO360_R 2
