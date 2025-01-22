@@ -27,7 +27,7 @@ Arduino_ESP32RGBPanel *rgbpanel = new Arduino_ESP32RGBPanel(
 #define RGB_PANEL
 Arduino_RGB_Display *gfx = new Arduino_RGB_Display(
     800 /* width */, 480 /* height */, rgbpanel, 0 /* rotation */, false /* auto_flush */);
-#define GFX_SPEED 40000000UL
+#define GFX_SPEED 16000000UL
 
 // I2C
 #define I2C_SUPPORTED
