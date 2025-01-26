@@ -29,7 +29,7 @@ Arduino_ESP32DSIPanel *dsipanel = new Arduino_ESP32DSIPanel(
     40 /* hsync_pulse_width */, 160 /* hsync_back_porch */, 160 /* hsync_front_porch */,
     10 /* vsync_pulse_width */, 23 /*vsync_back_porch  */, 12 /* vsync_front_porch */);
 Arduino_DSI_Display *gfx = new Arduino_DSI_Display(
-    1024 /* width */, 600 /* height */, dsipanel, 0 /* rotation */, false /* auto_flush */,
+    1024 /* width */, 600 /* height */, dsipanel, 0 /* rotation */, true /* auto_flush */,
     27 /* RST */, jd9165_init_operations, sizeof(jd9165_init_operations) / sizeof(lcd_init_cmd_t));
 #define GFX_SPEED 48000000UL
 
