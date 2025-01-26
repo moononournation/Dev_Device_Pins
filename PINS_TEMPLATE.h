@@ -19,7 +19,7 @@
 #define BTN_A 0
 
 // Battery ADC
-#define BAT_ADC 4
+// #define BAT_ADC 4
 
 // SPI
 // #define SPI_SHARED
@@ -92,8 +92,21 @@
 // #define TOUCH_RES -1
 // #define TOUCH_INT -1
 
-// I2S enable pin
-// #define I2S_EN 99 // HIGH for enable, LOW for mute
+// NeoPixel
+// #define NEOPIXEL 99
+
+// Audio
+// #define AUDIO_MUTE 99 // HIGH for unmute
+// #include <Wire.h>
+// #include <es8311.h>
+// #define AUDIO_EXTRA_PRE_INIT()                  \
+//   {                                             \
+//     pinMode(99, OUTPUT);                        \
+//     digitalWrite(99, HIGH);                     \
+//     Wire.begin(I2C_SDA, I2C_SCL);               \
+//     es8311_codec_config(AUDIO_HAL_44K_SAMPLES); \
+//     es8311_codec_set_voice_volume(60);          \
+//   }
 
 // I2S output
 // #define I2S_OUTPUT

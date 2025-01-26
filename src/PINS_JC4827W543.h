@@ -43,5 +43,3 @@ Arduino_NV3041A *gfx = new Arduino_NV3041A(bus, GFX_NOT_DEFINED /* RST */, 0 /* 
 #define I2S_LRCK 2
 #define I2S_DOUT 41
 #define I2S_DIN -1
-
-// #define AUDIO_MUTE_PIN 48   // LOW for mute

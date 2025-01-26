@@ -50,18 +50,8 @@ Arduino_ST7796 *gfx = new Arduino_ST7796(bus, GFX_NOT_DEFINED /* RST */, 3 /* ro
 #define TOUCH_RES -1
 #define TOUCH_INT 7
 
-// #define AUDIO_EN 99 // HIGH for enable, LOW for mute
-
-// I2S output
-#define I2S_OUTPUT
+// Audio
 #include <es8311.h>
-#define I2S_DEFAULT_GAIN_LEVEL 0.5
-#define I2S_OUTPUT_NUM I2S_NUM_0
-#define I2S_MCLK 41
-#define I2S_BCLK 21
-#define I2S_LRCK 14
-#define I2S_DOUT 12
-#define I2S_DIN 13
 #define AUDIO_EXTRA_PRE_INIT()                  \
   {                                             \
     aw.pinMode(13, OUTPUT);    /* ES_CTRL */    \
@@ -69,3 +59,13 @@ Arduino_ST7796 *gfx = new Arduino_ST7796(bus, GFX_NOT_DEFINED /* RST */, 3 /* ro
     es8311_codec_config(AUDIO_HAL_44K_SAMPLES); \
     es8311_codec_set_voice_volume(60);          \
   }
+
+// I2S output
+#define I2S_OUTPUT
+#define I2S_DEFAULT_GAIN_LEVEL 0.5
+#define I2S_OUTPUT_NUM I2S_NUM_0
+#define I2S_MCLK 41
+#define I2S_BCLK 21
+#define I2S_LRCK 14
+#define I2S_DOUT 12
+#define I2S_DIN 13
