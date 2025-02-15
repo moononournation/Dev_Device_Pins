@@ -119,11 +119,11 @@
 // #define I2S_DIN -1
 
 // Motor
-// #define MOTOR
-// #define MOTOR_R_A 99
-// #define MOTOR_R_B 99
+// #define MOTOR_SUPPORTED
 // #define MOTOR_L_A 99
 // #define MOTOR_L_B 99
+// #define MOTOR_R_A 99
+// #define MOTOR_R_B 99
 
 // Servo 360 Motor
 // #define SERVO360MOTOR

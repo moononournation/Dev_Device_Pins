@@ -30,9 +30,9 @@
 #define CAMERA_HREF 12
 #define CAMERA_PCLK 33
 
-// MOTOR
-#define MOTOR
-#define MOTOR_R_A 19
-#define MOTOR_R_B 22
+// Motor
+#define MOTOR_SUPPORTED
 #define MOTOR_L_A 18
 #define MOTOR_L_B 23
+#define MOTOR_R_A 19
+#define MOTOR_R_B 22

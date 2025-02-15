@@ -33,7 +33,8 @@
 #define I2C_SSD1306_DISPLAY
 #define I2C_SSD1306_ADDRESS 0x3c
 
-// Servo 360 Motor
+// Motor
+#define MOTOR_SUPPORTED
 #define SERVO360MOTOR
 #define SERVO360_REVERSE
 #define SERVO360_L 4
