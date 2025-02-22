@@ -49,7 +49,11 @@ Arduino_DSI_Display *gfx = new Arduino_DSI_Display(
 #define TOUCH_INT 21
 
 // NeoPixel
-#define NEOPIXEL 26
+#define NEOPIXEL_SUPPORTED
+#define NEOPIXEL_PIN 26
+#define NEOPIXEL_DEFAULT_BRIGHTNESS 4 // 1-255
+#define NEOPIXEL_WIDTH 1
+#define NEOPIXEL_HEIGHT 1
 
 // Audio
 #define AUDIO_MUTE 20 // HIGH for unmute

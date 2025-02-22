@@ -93,7 +93,11 @@
 // #define TOUCH_INT -1
 
 // NeoPixel
-// #define NEOPIXEL 99
+// #define NEOPIXEL_SUPPORTED
+// #define NEOPIXEL_PIN 99
+// #define NEOPIXEL_DEFAULT_BRIGHTNESS 4 // 1-255
+// #define NEOPIXEL_WIDTH 99
+// #define NEOPIXEL_HEIGHT 99
 
 // Audio
 // #define AUDIO_MUTE 99 // HIGH for unmute
