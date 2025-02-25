@@ -68,7 +68,7 @@ Arduino_ST7789 *gfx = new Arduino_ST7789(bus, GFX_NOT_DEFINED /* RST */, 1 /* ro
 
 // I2S output
 #define I2S_OUTPUT
-#define I2S_DEFAULT_GAIN_LEVEL 0.5
+#define I2S_DEFAULT_GAIN_LEVEL 0.2
 #define I2S_OUTPUT_NUM I2S_NUM_0
 #define I2S_MCLK -1
 #define I2S_BCLK 7

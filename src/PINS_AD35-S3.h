@@ -29,7 +29,7 @@ Adafruit_AW9523 aw;
 // Display
 #define GFX_SUPPORTED
 #include <Arduino_GFX_Library.h>
-Arduino_DataBus *bus = new Arduino_ESP32LCD8(
+Arduino_DataBus *bus = new Arduino_ESP32PAR8(
     45 /* DC */, GFX_NOT_DEFINED /* CS */, 10 /* WR */, GFX_NOT_DEFINED /* RD */,
     9 /* D0 */, 4 /* D1 */, 3 /* D2 */, 8 /* D3 */, 18 /* D4 */, 17 /* D5 */, 16 /* D6 */, 15 /* D7 */);
 Arduino_ST7796 *gfx = new Arduino_ST7796(bus, GFX_NOT_DEFINED /* RST */, 3 /* rotation */, true /* IPS */);
