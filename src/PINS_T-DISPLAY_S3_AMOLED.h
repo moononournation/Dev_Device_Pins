@@ -12,7 +12,6 @@
 // Battery ADC
 #define BAT_ADC 4
 
-
 // Display
 #define GFX_SUPPORTED
 #include <Arduino_GFX_Library.h>
