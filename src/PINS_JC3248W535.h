@@ -37,7 +37,7 @@ Arduino_AXS15231B *gfx = new Arduino_AXS15231B(bus, GFX_NOT_DEFINED /* RST */, 0
 #define TOUCH_INT 3
 
 // I2S output
-// #define I2S_OUTPUT
+#define I2S_OUTPUT
 #define I2S_DEFAULT_GAIN_LEVEL 0.8
 #define I2S_OUTPUT_NUM I2S_NUM_0
 #define I2S_MCLK -1
