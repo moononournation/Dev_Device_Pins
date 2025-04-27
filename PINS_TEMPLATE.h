@@ -5,6 +5,9 @@
 // The Dev Device peripheral power control pin needs to be set to HIGH when using the peripheral
 // #define PERI_POWER 99
 
+// Battery Enable pin
+// #define BAT_EN 99
+
 // Dev Device init macro
 // #define DEV_DEVICE_INIT()           \
 //   {                                 \
@@ -52,6 +55,7 @@
 // #define GFX_BL 99
 // Arduino_DataBus *bus = new Arduino_HWSPI(99 /* DC */, -1 /* CS */, 99 /* SCK */, 99 /* MOSI */, 99 /* MISO */);
 // Arduino_ILI9341 *gfx = new Arduino_ILI9341(bus, -1 /* RST */, 0 /* rotation */);
+// #define CANVAS_PREFERRED
 // #define GFX_SPEED 40000000UL
 
 // Camera
