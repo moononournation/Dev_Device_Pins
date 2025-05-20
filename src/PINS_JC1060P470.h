@@ -2,9 +2,6 @@
 
 #define DEV_DEVICE_PINS
 
-// LED
-// #define LED_A 99
-
 // Button
 #define BTN_A 0
 
