@@ -1,5 +1,10 @@
 #pragma once
 
+// Check if selected correct board
+#if !defined(ESP32) || !defined(CONFIG_IDF_TARGET_ESP32S3)
+#error "Please select Board: ESP32S3"
+#endif
+
 #define DEV_DEVICE_PINS
 
 // Battery Enable pin
