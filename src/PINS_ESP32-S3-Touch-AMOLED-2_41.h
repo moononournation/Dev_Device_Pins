@@ -34,7 +34,7 @@
 #define GFX_SUPPORTED
 #include <Arduino_GFX_Library.h>
 Arduino_DataBus *bus = new Arduino_ESP32QSPI(9 /* CS */, 10 /* SCK */, 11 /* D0 */, 12 /* D1 */, 13 /* D2 */, 14 /* D3 */);
-Arduino_GFX *gfx = new Arduino_RM690B0(bus, 21 /* RST */, 3 /* rotation */, 450 /* width */, 600 /* height */, 16 /* col offset 1 */, 0 /* row offset 1 */, 16 /* col offset 2 */, 0 /* row offset 2 */);
+Arduino_GFX *gfx = new Arduino_RM690B0(bus, 21 /* RST */, 0 /* rotation */, 450 /* width */, 600 /* height */, 16 /* col offset 1 */, 0 /* row offset 1 */, 16 /* col offset 2 */, 0 /* row offset 2 */);
 #define CANVAS_PREFERRED
 #define GFX_SPEED 80000000UL
 
