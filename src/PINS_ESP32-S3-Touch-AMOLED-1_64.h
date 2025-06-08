@@ -24,7 +24,7 @@
 #define GFX_SUPPORTED
 #include <Arduino_GFX_Library.h>
 Arduino_DataBus *bus = new Arduino_ESP32QSPI(9 /* CS */, 10 /* SCK */, 11 /* D0 */, 12 /* D1 */, 13 /* D2 */, 14 /* D3 */);
-Arduino_GFX *gfx = new Arduino_CO5300(bus, 21 /* RST */, 0 /* rotation */, false /* IPS */, 280, 456, 20 /* col offset 1 */, 0 /* row offset 1 */, 180 /* col_offset2 */, 24 /* row_offset2 */);
+Arduino_CO5300 *gfx = new Arduino_CO5300(bus, 21 /* RST */, 0 /* rotation */, false /* IPS */, 280, 456, 20 /* col offset 1 */, 0 /* row offset 1 */, 180 /* col_offset2 */, 24 /* row_offset2 */);
 #define CANVAS_PREFERRED
 #define GFX_SPEED 80000000UL
 

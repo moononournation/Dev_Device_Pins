@@ -22,7 +22,7 @@
 #define GFX_SUPPORTED
 #include <Arduino_GFX_Library.h>
 Arduino_DataBus *bus = new Arduino_ESP32SPIDMA(7 /* DC */, 9 /* CS */, 5 /* SCK */, 6 /* MOSI */, GFX_NOT_DEFINED /* MISO */);
-Arduino_G *gfx = new Arduino_JD9613(bus, 8 /* RST */);
+Arduino_JD9613 *gfx = new Arduino_JD9613(bus, 8 /* RST */);
 #define CANVAS_PREFERRED
 #define GFX_SPEED 80000000UL
 

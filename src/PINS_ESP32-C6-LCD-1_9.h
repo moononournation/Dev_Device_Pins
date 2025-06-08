@@ -34,7 +34,7 @@
 #define GFX_SUPPORTED
 #include <Arduino_GFX_Library.h>
 Arduino_DataBus *bus = new Arduino_HWSPI(6 /* DC */, 7 /* CS */, 5 /* SCK */, 4 /* MOSI */, 19 /* MISO */);
-Arduino_GFX *gfx = new Arduino_ST7789(bus, 14 /* RST */, 1 /* rotation */, true /* IPS */, 170 /* width */, 320 /* height */, 35 /* col offset 1 */, 0 /* row offset 1 */, 35 /* col offset 2 */, 0 /* row offset 2 */);
+Arduino_ST7789 *gfx = new Arduino_ST7789(bus, 14 /* RST */, 1 /* rotation */, true /* IPS */, 170 /* width */, 320 /* height */, 35 /* col offset 1 */, 0 /* row offset 1 */, 35 /* col offset 2 */, 0 /* row offset 2 */);
 #define GFX_SPEED 80000000UL
 
 // I2C

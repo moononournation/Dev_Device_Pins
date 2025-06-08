@@ -61,7 +61,7 @@
 #include <Arduino_GFX_Library.h>
 #define GFX_BL 48
 Arduino_DataBus *bus = new Arduino_HWSPI(9 /* DC */, 39 /* CS */, SPI_SCK /* SCK */, SPI_MOSI /* MOSI */, SPI_MISO /* MISO */);
-Arduino_GFX *gfx = new Arduino_ST7796(bus, 47 /* RST */, 3 /* rotation */, true /* IPS */, 222 /* width */, 480 /* height */, 49 /* col offset 1 */, 0 /* row offset 1 */, 49 /* col offset 2 */, 0 /* row offset 2 */);
+Arduino_ST7796 *gfx = new Arduino_ST7796(bus, 47 /* RST */, 3 /* rotation */, true /* IPS */, 222 /* width */, 480 /* height */, 49 /* col offset 1 */, 0 /* row offset 1 */, 49 /* col offset 2 */, 0 /* row offset 2 */);
 #define GFX_SPEED 80000000UL
 
 // I2C

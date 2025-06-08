@@ -32,7 +32,7 @@
 #include <Arduino_GFX_Library.h>
 #define GFX_BL 22
 Arduino_DataBus *bus = new Arduino_HWSPI(15 /* DC */, 14 /* CS */, 7 /* SCK */, 6 /* MOSI */, 5 /* MISO */);
-Arduino_GFX *gfx = new Arduino_ST7789(bus, 21 /* RST */, 1 /* rotation */, true /* IPS */, 172 /* width */, 320 /* height */, 34 /* col offset 1 */, 0 /* row offset 1 */, 34 /* col offset 2 */, 0 /* row offset 2 */);
+Arduino_ST7789 *gfx = new Arduino_ST7789(bus, 21 /* RST */, 1 /* rotation */, true /* IPS */, 172 /* width */, 320 /* height */, 34 /* col offset 1 */, 0 /* row offset 1 */, 34 /* col offset 2 */, 0 /* row offset 2 */);
 #define GFX_SPEED 80000000UL
 
 // NeoPixel

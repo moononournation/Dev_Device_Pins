@@ -17,7 +17,7 @@
 #include <Arduino_GFX_Library.h>
 Arduino_DataBus *bus = new Arduino_ESP32QSPI(
     6 /* cs */, 47 /* sck */, 18 /* d0 */, 7 /* d1 */, 48 /* d2 */, 5 /* d3 */);
-Arduino_GFX *gfx = new Arduino_RM67162(bus, 17 /* RST */, 3 /* rotation */);
+Arduino_RM67162 *gfx = new Arduino_RM67162(bus, 17 /* RST */, 3 /* rotation */);
 #define GFX_SPEED 80000000UL
 
 // I2C

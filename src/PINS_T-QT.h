@@ -14,7 +14,7 @@
 #include <Arduino_GFX_Library.h>
 #define GFX_BL 10
 Arduino_DataBus *bus = new Arduino_ESP32SPI(6 /* DC */, 5 /* CS */, 3 /* SCK */, 2 /* MOSI */, GFX_NOT_DEFINED /* MISO */);
-Arduino_GFX *gfx = new Arduino_GC9107(bus, 1 /* RST */, 2 /* rotation */, true /* IPS */);
+Arduino_GC9107 *gfx = new Arduino_GC9107(bus, 1 /* RST */, 2 /* rotation */, true /* IPS */);
 #define GFX_SPEED 80000000UL
 
 // I2C
