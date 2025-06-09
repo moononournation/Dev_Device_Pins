@@ -53,9 +53,9 @@ Arduino_DSI_Display *gfx = new Arduino_DSI_Display(
 #define NEOPIXEL_HEIGHT 1
 
 // Audio
+#if __has_include("es8311.h")
 #define AUDIO_MUTE 20 // HIGH for unmute
 #include <Wire.h>
-#include <es8311.h>
 #define AUDIO_EXTRA_PRE_INIT()                  \
   {                                             \
     Wire.begin(I2C_SDA, I2C_SCL);               \
@@ -72,6 +72,7 @@ Arduino_DSI_Display *gfx = new Arduino_DSI_Display(
 #define I2S_LRCK 10
 #define I2S_DOUT 9
 #define I2S_DIN 11
+#endif // __has_include("es8311.h")
 
 // SDIO
 #define SDIO_SUPPORT

@@ -51,7 +51,7 @@ Arduino_ST7796 *gfx = new Arduino_ST7796(bus, GFX_NOT_DEFINED /* RST */, 3 /* ro
 #define TOUCH_INT 7
 
 // Audio
-#include <es8311.h>
+#if __has_include("es8311.h")
 #define AUDIO_EXTRA_PRE_INIT()                  \
   {                                             \
     aw.pinMode(13, OUTPUT);    /* ES_CTRL */    \
@@ -69,3 +69,4 @@ Arduino_ST7796 *gfx = new Arduino_ST7796(bus, GFX_NOT_DEFINED /* RST */, 3 /* ro
 #define I2S_LRCK 14
 #define I2S_DOUT 12
 #define I2S_DIN 13
+#endif // __has_include("es8311.h")

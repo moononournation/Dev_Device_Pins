@@ -103,10 +103,10 @@
 // #define NEOPIXEL_WIDTH 99
 // #define NEOPIXEL_HEIGHT 99
 
+// #if __has_include("es8311.h")
 // Audio
 // #define AUDIO_MUTE 99 // HIGH for unmute
 // #include <Wire.h>
-// #include <es8311.h>
 // #define AUDIO_EXTRA_PRE_INIT()                  \
 //   {                                             \
 //     pinMode(99, OUTPUT);                        \
@@ -125,6 +125,7 @@
 // #define I2S_LRCK 99
 // #define I2S_DOUT 99
 // #define I2S_DIN -1
+// #endif // __has_include("es8311.h")
 
 // Motor
 // #define MOTOR_SUPPORTED
