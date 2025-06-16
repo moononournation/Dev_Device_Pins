@@ -1,5 +1,10 @@
 #pragma once
 
+// Check if selected right Board
+#if !defined(ESP32) || !CONFIG_IDF_TARGET_ESP32S3
+#error "Please select Board: ESP32S3"
+#endif
+
 #define DEV_DEVICE_PINS
 
 // Button

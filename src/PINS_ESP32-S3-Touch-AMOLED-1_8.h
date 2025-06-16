@@ -1,8 +1,12 @@
 #pragma once
 
-// Check if selected correct board
-#if !defined(ESP32) || !defined(CONFIG_IDF_TARGET_ESP32S3)
+// Check if selected right Board
+#if !defined(ESP32) || !CONFIG_IDF_TARGET_ESP32S3
 #error "Please select Board: ESP32S3"
+#endif
+// Check if enabled USB CDC On Boot
+#if !ARDUINO_USB_CDC_ON_BOOT
+#error "Please select USB CDC On Boot: Enabled"
 #endif
 
 #define DEV_DEVICE_PINS
