@@ -48,3 +48,7 @@ The follow projects utilize Dev Device Pins header:
 - <https://github.com/moononournation/ESP32RobotWebServer.git>
 - <https://github.com/moononournation/I2C_Sensor_Hub.git>
 - <https://github.com/moononournation/mpeg_player.git>
+
+If you think **Dev Device Pins** can help you, you can:
+
+[![Buy Me A Coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/moononournx)
