@@ -24,13 +24,13 @@
 // #define SPI_MISO 99
 
 // SD card
-// #define SD_SUPPORTED
-// #define SD_SCK 99
-// #define SD_MOSI 99 // CMD
-// #define SD_MISO 99 // D0
-// #define SD_D1 99
-// #define SD_D2 99
-// #define SD_CS 99 // D3
+#define SD_SUPPORTED
+#define SD_SCK 10
+#define SD_MOSI 11 // CMD
+#define SD_MISO 12 // D0
+#define SD_D1 13
+#define SD_D2 14
+#define SD_CS 15 // D3
 
 // Lora
 // #define LORA_SUPPORTED
