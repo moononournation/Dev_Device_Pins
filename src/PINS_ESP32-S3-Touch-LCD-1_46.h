@@ -51,7 +51,7 @@ Arduino_GFX *gfx = new Arduino_SPD2010(bus, GFX_NOT_DEFINED /* RST */);
 
 // I2S output
 #define I2S_OUTPUT
-#define I2S_DEFAULT_GAIN_LEVEL 2.0
+#define I2S_DEFAULT_GAIN_LEVEL 1.0
 #define I2S_OUTPUT_NUM I2S_NUM_0
 #define I2S_MCLK -1
 #define I2S_BCLK 48
