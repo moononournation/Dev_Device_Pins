@@ -20,9 +20,19 @@
 
 // Button
 #define BTN_A 0
+// #define BTN_B 99
+// #define BTN_X 99
+// #define BTN_Y 99
+// #define BTN_SELECT 99
+// #define BTN_START 99
+// #define BTN_UP 99
+// #define BTN_DOWN 99
+// #define BTN_LEFT 99
+// #define BTN_RIGHT 99
 
 // Battery ADC
-// #define BAT_ADC 4
+// #define BAT_ADC 99
+// #define BAT_ADC_EN 99
 
 // SPI
 // #define SPI_SHARED
