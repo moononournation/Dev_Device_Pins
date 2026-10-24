@@ -1,5 +1,15 @@
 #pragma once
 
+// Check if selected right Board
+// #if !defined(ESP32) || !CONFIG_IDF_TARGET_ESP32S3
+// #error "Please select Board: ESP32S3"
+// #endif
+
+// Check if selected right PSRAM option
+// #if !defined(BOARD_HAS_PSRAM) || !defined(CONFIG_SPIRAM_MODE_OCT)
+// #error "Please select PSRAM: OPI PSRAM"
+// #endif
+
 #define DEV_DEVICE_PINS
 
 // The Dev Device peripheral power control pin needs to be set to HIGH when using the peripheral
